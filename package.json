@@ -2,18 +2,24 @@
   "name": "jessescupcakes_front",
   "version": "1.0.0",
   "description": "This is a front end  project for a fake Cupcake business called Jesse's Cupcakes",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --open hot",
     "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NikitaNova/jesses_cupcake_shop_front.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Client",
+    "Front End",
+    "React",
+    "Redux",
+    "Webpack"
+  ],
+  "author": "Nikita Nova",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NikitaNova/jesses_cupcake_shop_front/issues"
@@ -35,11 +41,14 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.10",
-    "sass-loader": "^10.0.2",
-    "style-loader": "^1.2.1",
     "svg-inline-loader": "^0.8.2",
-    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "svg-url-loader": "^6.0.0",
+    "webpack": "^4.44.1"
   }
 }
