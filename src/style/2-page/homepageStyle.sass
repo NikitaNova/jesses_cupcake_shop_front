@@ -1,90 +1,218 @@
 @import "../3-templates/WASH-HTML"
 @import "../1-helpers/color"
 @import "../1-helpers/font"
+@import "../1-helpers/unselectable"
 
 body
+  //Dimension
+  width: 100vw
+  //Font
   @include IvyPrestoNormal()
   font-size: $fontSizeNormal
-  height: 223em
-  width: 100vw
   color: $purple-dark
-
   background-color: $yellow
 
   main
+    //Dimension
     width: 100%
     height: 100%
-
+    //Self-Position
     display: flex
+    //Child-Position
     flex-direction: column
     align-items: center
 
     .slideShowContainer
-      height: 90vh
-      width: 100vw
+      //Self-Position
       display: grid
+      //Child-Position
       grid-template-rows: 20% 60% 20%
       grid-template-columns: 50% 50%
-
       justify-items: center
       align-items: center
-
+      //Dimension
+      height: 90vh
+      width: 100vw
       p
+        //Self-Position
         align-self: end
         grid-row: 2/3
         grid-column: 1/2
-
-        font-size: 1.5em
+        //Dimension
         width: 50%
         height: 50%
-
+        //Font
+        font-size: 1.5em
       nav
-        color: $purple-dark
-
+        //Self-Position
         grid-column: 1/3
         grid-row: 1/2
         align-self: start
-
-        height: 8em
-        width: 90vw
+        //Child-Position
         display: flex
         align-items: center
         justify-items: center
-
+        //Dimension
+        height: 8em
+        width: 90vw
+        //Font
+        color: $purple-dark
         a
+          //Font
           @include IvyPrestoItalic
           font-size: $fontSizeLarge
-
+          color: $purple-dark
+          text-decoration: none
         div
-          width: 100%
-          height: 100%
-
+          //Child-Position
           display: flex
           flex-direction: column
           justify-content: center
           align-items: center
-
+          //Dimension
+          width: 100%
+          height: 100%
           img
+            //Dimension
             width: 20em
 
 
       .slideShowNav
-        width: 100pt
-        height: 10pt
-
+        //Self-Position
         grid-column: 1/3
         grid-row: 3/4
         align-self: end
-
+        //Child-Position
         display: flex
         flex-direction: row
         align-items: center
         justify-content: center
-
+        //Dimension
+        width: 100pt
+        height: 20pt
         .slideDot
+          //Self-Position
           margin: 5pt
+          //Dimension
           width: 10pt
           height: 10pt
+          //Style
           background-color: $purple-dark
           border-radius: 50%
+    .miniOrderContainer
+      //Dimension
+      width: 100%
+      height: 23em
+      //Style
+      background-color: $purple-light
+      //Font
+      color: yellow
+      .content
+        //Self-Position
+        display:  flex
+        flex-direction: column
+        justify-items: center
+        align-items: flex-start
+        //Dimension
+        height: 100%
+        //Style
+        overflow-x: scroll
+        .heading
+          //Self-Position
+          width: 100%
+          height:  15%
+          //Child-Position
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: flex-start
+          p
+            //Self-Position
+            margin-left: 5.6vw
+            //Font
+            font-size: $fontSizeLarge
+        .itemContainer
+          //Self-Position
+          margin-left: 5vw
+          //Child-Position
+          display: flex
+          flex-direction: row
+          justify-content: start
+          align-content: center
+          //Dimension
+          width: 110vw
+          //Style
+          overflow-x: scroll
+    .aboutContainer
+      //Self-Position
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      //Dimension
+      width: 100%
+      height: 600pt
+      //Style
+      background-color: $yellow
+
+      .aboutDisplayImage
+        //Child-Position
+        display: flex
+        justify-content: center
+        align-items: center
+        //Dimension
+        height: 100%
+        width: 50%
+
+        .imageContainer
+          //Self-Position
+          width: 70%
+          height: 80%
+          //Child-Position
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          //Style
+          background-color: $purple-light
+          border-radius: 2%
+
+          img
+            //Self-Position
+            padding: 5pt
+            margin: 4%
+            //Dimension
+            width: 90%
+            height: 75%
+            //Style
+            background-color: $purple-dark
+            border-radius: 1%
+
+          .caption
+            //Self-Position
+            margin: auto
+            //Dimension
+            width: 90%
+            //Font
+            color: $yellow
+
+
+      .aboutText
+        //Child-Position
+        display: flex
+        justify-content: center
+        align-items: center
+        //Dimension
+        width: 50%
+        height: 100%
+
+        p
+          //Dimension
+          width: 80%
+          height: 80%
+          //Style
+
+          //Font
+          @include IvyPrestoNormal()
+          font-size: $fontSizeMedium
 

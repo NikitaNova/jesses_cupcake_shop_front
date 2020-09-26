@@ -1,0 +1,97 @@
+::placeholder {
+  color: #3b1a73;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #3b1a73;
+  opacity: 1;
+}
+
+.menuItem {
+  font-size: 15pt;
+  font-family: ivypresto-headline, serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5pt 15pt 0 15pt;
+  width: 17em;
+  height: 17em;
+  border-radius: 3%;
+  color: #ffd34e;
+  background-color: #3b1a73;
+}
+.menuItem .menuItemContainer {
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 30% 20% 30% 20%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.menuItem h1 {
+  align-self: start;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  font-family: ivypresto-headline, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1.1em;
+}
+.menuItem .price {
+  align-self: start;
+  grid-area: 2/1/3/2;
+  font-size: 1em;
+}
+.menuItem .calories {
+  grid-area: 4/1/5/2;
+  align-self: end;
+  font-size: 1em;
+}
+.menuItem .quantity {
+  grid-area: 4/2/5/3;
+  align-self: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+}
+.menuItem .quantity p {
+  margin-left: 0.5em;
+}
+.menuItem .quantity .quantityNum {
+  margin: 5pt;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 25pt;
+  height: 25pt;
+  outline: none;
+  border: none;
+  border-radius: 5%;
+  background-color: #ffd34e;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9em;
+  font-family: ivypresto-headline, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3b1a73;
+}
+.menuItem .quantity .quantityNum input {
+  width: 25pt;
+  height: 25pt;
+  color: #3b1a73;
+  opacity: 1;
+}
+.menuItem img {
+  width: 40pt;
+  grid-area: 4/3/5/4;
+  align-self: end;
+  justify-self: end;
+}
+
+/*# sourceMappingURL=menu_item.css.map */
