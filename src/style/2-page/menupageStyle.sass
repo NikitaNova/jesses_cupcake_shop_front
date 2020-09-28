@@ -1,0 +1,119 @@
+@import "../1-helpers/unselectable"
+@import "../1-helpers/font"
+@import "../1-helpers/color"
+
+
+body
+  //Self-Position
+  margin: 0
+  padding: 0
+
+  //Style
+  background-color: $purple-light
+  //Font
+  color: $yellow
+  @include IvyPrestoNormal
+  font-size: 15pt
+
+  .MenuContainer
+    main
+      //Dimension
+      //Child-Position
+      display: flex
+      flex-direction: column
+      justify-items: flex-start
+      align-items: center
+
+      nav
+        //Self-Position
+        margin: 0 0 3% 0
+        //Child-Position
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 100%
+        justify-items: center
+        align-items: start
+        //Dimension
+        width: 90vw
+
+        h1
+          //Self-Position
+          margin: 0 0 0 0
+          //Font
+          @include IvyPrestoBold
+          font-size: 4em
+
+        div
+          //Child-Position
+          display: flex
+          justify-items: center
+          align-items: center
+          //Dimension
+          width: 50pt
+          height: 50pt
+
+        h3
+          //Font
+          @include IvyPrestoItalic
+          font-size: 2em
+          a
+            text-decoration: none
+            color: $yellow
+
+        .backButton
+          justify-self: flex-start
+
+
+        .ItemCounter
+          //Dimensions
+          width: 150pt
+          height: 100pt
+          //Self-position
+          justify-self: flex-end
+          //Child-Position
+          display: flex
+          flex-direction: row
+          justify-content: flex-end
+          align-items: center
+
+          h3
+            //Self-Position
+            margin: auto 0 auto auto
+
+          .cartCounterIcon
+            //Child-Position
+            //Dimension
+            width: 40pt
+            height: 40pt
+            //Style
+            background-color: $yellow
+            border-radius: 50%
+
+            h3
+              //Self-Position
+              margin: auto
+              //Font
+              color: $purple-dark
+
+          .cartName
+            margin: 0 0 0 3%
+
+
+      .MenuGrid
+        //Self-Position
+        padding-bottom: 10%
+        //Child-Position
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        justify-items: center
+        align-items: center
+        //Dimension
+        width: 90vw
+        height: 160vh
+        .menuItem:nth-child(3n + 1)
+          justify-self: flex-start
+
+
+        .menuItem:nth-child(3n + 3)
+          justify-self: flex-end

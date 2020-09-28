@@ -130,6 +130,9 @@ body main .miniOrderContainer .content .itemContainer {
   width: 110vw;
   overflow-x: scroll;
 }
+body main .miniOrderContainer .content .itemContainer .menuItem {
+  margin-right: 35pt;
+}
 body main .aboutContainer {
   display: flex;
   flex-direction: row;

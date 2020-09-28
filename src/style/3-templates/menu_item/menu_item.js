@@ -11,12 +11,14 @@ export default function MenuItem(prop){
             <div className={"menuItemContainer"}>
                 <h1>{prop.title}</h1>
                 <p className={"price"}>{prop.price}</p>
-                <p className={"calories"}>{prop.cal}</p>
-                <div className={"quantity"}>
-                    <p>qt:</p>
-                    <input className={"quantityNum"} placeholder={"01"}/>
+                <div className={"bottom"}>
+                    <p className={"calories"}>{prop.cal}</p>
+                    <div className={"quantity"}>
+                        <p>qt:</p>
+                        <input className={"quantityNum"} placeholder={"01"}/>
+                    </div>
+                    <img src={addToCart} alt={"addToCart"} unselectable={"on"}/>
                 </div>
-                <img src={addToCart} alt={"addToCart"} unselectable={"on"}/>
             </div>
         </div>
     )

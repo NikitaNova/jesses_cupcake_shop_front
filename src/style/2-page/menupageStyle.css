@@ -1,0 +1,104 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #6d30d4;
+  color: #ffd34e;
+  font-family: ivypresto-headline, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15pt;
+}
+body .MenuContainer main {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+}
+body .MenuContainer main nav {
+  margin: 0 0 3% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  justify-items: center;
+  align-items: start;
+  width: 90vw;
+}
+body .MenuContainer main nav h1 {
+  margin: 0 0 0 0;
+  font-family: ivypresto-headline, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4em;
+}
+body .MenuContainer main nav div {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 50pt;
+  height: 50pt;
+}
+body .MenuContainer main nav h3 {
+  font-family: ivypresto-headline, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2em;
+}
+body .MenuContainer main nav h3 a {
+  text-decoration: none;
+  color: #ffd34e;
+}
+body .MenuContainer main nav .backButton {
+  justify-self: flex-start;
+}
+body .MenuContainer main nav .ItemCounter {
+  width: 150pt;
+  height: 100pt;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .MenuContainer main nav .ItemCounter h3 {
+  margin: auto 0 auto auto;
+}
+body .MenuContainer main nav .ItemCounter .cartCounterIcon {
+  width: 40pt;
+  height: 40pt;
+  background-color: #ffd34e;
+  border-radius: 50%;
+}
+body .MenuContainer main nav .ItemCounter .cartCounterIcon h3 {
+  margin: auto;
+  color: #3b1a73;
+}
+body .MenuContainer main nav .ItemCounter .cartName {
+  margin: 0 0 0 3%;
+}
+body .MenuContainer main .MenuGrid {
+  padding-bottom: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 90vw;
+  height: 160vh;
+}
+body .MenuContainer main .MenuGrid .menuItem:nth-child(3n+1) {
+  justify-self: flex-start;
+}
+body .MenuContainer main .MenuGrid .menuItem:nth-child(3n+3) {
+  justify-self: flex-end;
+}
+
+/*# sourceMappingURL=menupageStyle.css.map */
